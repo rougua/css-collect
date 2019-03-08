@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>瓜坤的第零份简历</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <div id="siteWelcome" class="site-welcome active">
+    <div id="siteWelcome" class="site-welcome">
         <div class="loading">
             <div class="outer"></div>
             <div class="inner">
@@ -24,8 +26,146 @@
         </div>
     </div>
 
+    <div id="topNavbar" class="topNavbar">
+        <div class="topNavbar-inner clearfix">
+            <a href="#" class="logo">
+                <span class="RS">RS</span>
+                <span class="card">card</span>
+            </a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#siteAbout">关于</a></li>
+                    <li><a href="#siteSkills">技能</a></li>
+                    <li>
+                        <a href="#siteWorks">作品</a>
+                        <ul class="submenu">
+                            <li>博客1</li>
+                            <li>博客2</li>
+                            <li>博客3</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">日历</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">其他</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+
+    <main>
+        <div data-x id="siteAbout" class="userCard">
+            <div class="pictureAndText clearfix">
+                <div class="picture">
+                    <img src="https://i.loli.net/2019/03/08/5c81d1933b82d.jpg" alt="头像" width="299" height="347">
+                </div>
+                <div class="text">
+                    <span class="hello">
+                        hello
+                        <span class="triangle"></span>
+                    </span>
+                    <h1>guakun</h1>
+                    <p>front-end software engineer</p>
+                    <hr>
+                    <dl>
+                        <dt>age</dt>
+                        <dd>24</dd>
+                        <dt>live city</dt>
+                        <dd>hangzhoy</dd>
+                        <dt>email</dt>
+                        <dd>2306831967@qq.com</dd>
+                        <dt>phone</dt>
+                        <dd>17615839208</dd>
+                    </dl>
+                </div>
+            </div>
+            <footer class="media">
+                <a href="https://github.com/guakun">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
+            </footer>
+        </div>
+        <p class="downloadResume-wrapper">
+            <a href="" target="_blank" download class="downloadResume">下载 PDF 简历</a>
+        </p>
+        <p class="selfIntroduction">
+            王宏坤
+            <br>
+            技能: 前端开发，java开发，c#开发，Node.js 开发
+        </p>
+    </main>
+
+    <section data-x id="siteSkills" class="skills">
+        <h2>技能</h2>
+        <ol class="clearfix">
+            <li>
+                <h3>HTML 5 &amp; CSS 3</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Javascript</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>jQuery</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>HTTP</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Vue</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>React</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <section data-x class="portfolio">
+        <h2>作品集</h2>
+
+        <div id="mySliders">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <img src="https://i.loli.net/2019/03/08/5c81d7ab0f35f.jpg" alt="" class="swiper-slider">
+                    <img src="https://i.loli.net/2019/03/08/5c81d7acf118b.jpeg" alt="" class="swiper-slider">
+                    <img src="https://i.loli.net/2019/03/08/5c81d84735f67.png" alt="" class="swiper-slider">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <!-- svg icon -->
+    <script src="//at.alicdn.com/t/font_451045_32zbfqegtq3t0529.js"></script>
     <!-- 库函数 -->
     <script src="./js/gua.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+    <!-- 模块化 -->
+    <script src="./js/init-swiper.js"></script>
+
 </body>
 </html>
