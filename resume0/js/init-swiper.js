@@ -1,5 +1,5 @@
 !function () {
-    const view = e('#mySliders')
+    const view = e('#mySlides')
     
     const controller = {
         view: null,
