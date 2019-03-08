@@ -1,5 +1,5 @@
 .site-welcome {
-    display: flex;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,11 +10,13 @@
     justify-content: center;
     align-items: center;
 }
+.site-welcome.active {
+    display: flex;
+}
 .loading {
     height: 64px;
     width: 64px;
     position: relative;
-    border: 1px solid red;
 }
 .loading .outer {
     position: absolute;
